@@ -51,7 +51,7 @@ nav{
 	height: 172px;
 	padding: 15px;
 	border-radius: 50%;
-	background: #b5b9ba;
+	background: #c4c4c4;
 }
 
 .smalltext{
@@ -106,7 +106,7 @@ nav{
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
-	background: #b5b9ba;
+	background: #c4c4c4;
 	padding: 15px;
 	margin-right: 2px;
     z-index: 2;	
@@ -118,7 +118,7 @@ nav{
 	padding: 5px 10px;
 	color: #fff;
 	background: #EDB9B4;
-	border: 4px solid #b5b9ba;
+	border: 4px solid #c4c4c4;
 	border-radius: 5px;
 }
 .even .timing-time{
