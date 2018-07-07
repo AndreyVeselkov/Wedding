@@ -1,10 +1,10 @@
 h1, h2, h3, h4{
 	font-family: 'Pattaya', sans-serif;
 }
-H1{
+h1{
 	font-size: 60px;
 	text-align: center;
-	color: #e5949b;
+	color: #EDB9B4;
 }
 #video-container{
 	position: relative;
@@ -42,14 +42,94 @@ nav{
 }
 
 #clockdiv div > span{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+	font-family: 'Pattaya', sans-serif;
+	width: 172px;
+	height: 172px;
 	padding: 15px;
-	border-radius: 3px;
+	border-radius: 50%;
 	background: #b5b9ba;
-	display: inline-block;
 }
 
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
-	color: #e5949b;
+	color: #EDB9B4;
+}
+.main{
+	text-align: center;
+}
+.timing{
+	position: relative;
+	width: 100%;
+	float: left;
+}
+.timeline{
+	position: absolute;
+    top: 0px;
+    right: 48%;
+    display: block;
+    background: #000;
+    height: 100%;
+    width: 1px;
+    margin-right: 1.5px;
+}
+.timing-list{
+	width: 100%;
+}
+.timing-item{
+	width: 100%;
+	list-style: none;
+	padding: 26px 0;
+    float: left;
+}
+.col-sm-6.even{
+	padding-right: 60px;
+	margin-top: 25px;
+}
+.col-sm-6.odd{
+	padding-left: 60px;
+	margin-top: 25px;
+}
+.col-sm-6.even p{
+	text-align: right;
+}
+.col-sm-6.odd p{
+	text-align: left;
+}
+.timing-icon{
+	position: absolute;
+	right: 44%;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: #b5b9ba;
+	padding: 15px;
+	margin-right: 2px;
+    z-index: 2;	
+	border: 5px solid #EDB9B4;
+}
+.timing-time{
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: #fff;
+	background: #EDB9B4;
+	border: 4px solid #b5b9ba;
+	border-radius: 5px;
+}
+.even .timing-time{
+	float: right;
+}
+.odd .timing-time{
+	float: left;
+}
+.timing-title{
+	font-family: 'Pattaya', sans-serif;
+	padding: 5px;
+	font-size: 22px;
+	color: #666;
 }
