@@ -112,6 +112,9 @@ nav{
     z-index: 2;	
 	border: 5px solid #EDB9B4;
 }
+.timing-icon.big{
+	padding: 12px;
+}
 .timing-time{
 	display: inline-block;
 	font-size: 20px;
