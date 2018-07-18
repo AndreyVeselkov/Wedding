@@ -13,8 +13,50 @@ video{
 	width: 100%;
 }
 nav{
+	position: fixed;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 	height: 80px;
-	background: url(../img/bg-header-rose.png) top repeat-x;
+	text-align: center;
+	background: url(../img/nav-bg.jpg) no-repeat;
+	background-size: 100%;
+    background-position: 49% 21%;
+	top: 0;
+    width: 100%;
+    z-index: 100;
+}
+nav::before{
+	position: absolute;
+	content: '';
+	background: url(../img/top.svg) top no-repeat;
+	height: 150px;
+    width: 265px;
+    left: -16px;
+    top: -40px;
+}
+nav::after{
+	position: absolute;
+	content: '';
+	background: url(../img/top.svg) top no-repeat;
+	height: 150px;
+    width: 265px;
+    right: -16px;
+    top: -40px;
+	transform: scaleX(-1);
+}
+.nav{
+	display: inline-block;
+	float: left;
+}
+.nav li{
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 18px;
+	float: left;
+	padding: 5px 15px;
 }
 .light-mask{
 	position: absolute;
