@@ -1,15 +1,16 @@
 h1, h2, h3, h4{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Caveat', cursive;
+	
 }
 h1{
 	font-size: 60px;
-	font-weight: 300;
+	font-weight: 700;
 	text-align: center;
 	color: #EDB9B4;
 	margin-bottom: 40px;
 }
 p{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	font-weight: 400;
 }
@@ -96,7 +97,7 @@ nav::after{
     justify-content: center;
     align-items: center;
     font-size: 50px;
-	font-family: 'Pattaya', sans-serif;
+	font-family: 'Caveat', cursive;
 	width: 172px;
 	height: 172px;
 	padding: 15px;
@@ -115,6 +116,55 @@ nav::after{
 }
 .invite{
 	text-align: center;
+	margin: 40px 0 60px;
+}
+.invite:before{
+	position: absolute;
+	content: '';
+	background: url(../img/book-opened.svg) no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 250px;
+	top: 180px;
+	left: -50px;
+}
+.invite:after{
+	position: absolute;
+	content: '';
+	background: url(../img/book-block.svg) no-repeat;
+	background-size: contain;
+	width: 250px;
+	height: 250px;
+	top: 120px;
+	right: -50px;
+}
+.invite .hash{
+	font-family:'Caveat', cursive;
+	font-size: 50px;
+	color: #EDB9B4;
+	margin-top: 40px;
+	margin-bottom: 0;
+}
+.invite h2{
+	font-family:'Pacifico',cursive;
+	font-size: 60px;
+	color: #c4c4c4;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+.button{
+	padding: 20px 45px;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.agree{
+	background-color: #EDB9B4;
+	color: #fff;
+	margin: 20px 0 50px 0;
+	text-transform: uppercase;
 }
 .timing{
 	position: relative;
@@ -123,12 +173,12 @@ nav::after{
 }
 .timeline{
 	position: absolute;
-    top: 0px;
+    top: 50px;
     right: 48%;
     display: block;
-    background: #000;
-    height: 100%;
-    width: 1px;
+    background: #efd5d4;
+    height: 93%;
+    width: 3px;
     margin-right: 1.5px;
 }
 .timing-list{
@@ -137,16 +187,14 @@ nav::after{
 .timing-item{
 	width: 100%;
 	list-style: none;
-	padding: 26px 0;
+	padding: 50px 0;
     float: left;
 }
 .col-sm-6.even{
 	padding-right: 60px;
-	margin-top: 25px;
 }
 .col-sm-6.odd{
 	padding-left: 60px;
-	margin-top: 25px;
 }
 .col-sm-6.even p{
 	text-align: right;
@@ -160,7 +208,7 @@ nav::after{
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;
-	background: #c4c4c4;
+	background: #e6e6e6;
 	padding: 15px;
 	margin-right: 2px;
     z-index: 2;	
@@ -172,11 +220,11 @@ nav::after{
 .timing-time{
 	display: inline-block;
 	font-size: 20px;
-	padding: 5px 10px;
+	padding: 10px 15px;
 	color: #fff;
-	background: #EDB9B4;
-	border: 4px solid #c4c4c4;
+	background: #efd5d4;
 	border-radius: 5px;
+	margin-top: 20px;
 }
 .even .timing-time{
 	float: right;
@@ -185,13 +233,31 @@ nav::after{
 	float: left;
 }
 .timing-title{
-	font-family: 'Pattaya', sans-serif;
+	font-family: 'Caveat', cursive;
 	padding: 5px;
-	font-size: 22px;
+	font-size: 30px;
 	color: #666;
 }
 .dresscode{
-	text-align: center
+	padding: 100px 20px 100px 20px;
+	text-align: center;
+	background: url(../img/dresscode-bg.jpg) 50% 50% no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+.dresscode .row{
+	display: flex;
+    justify-content: center;
+}
+.dresscode .white-bg{
+	width: 55%;
+	padding: 30px 25px 45px;
+	background: #fff;
+	border-radius: 10px;
+}
+.colors {
+	margin: 30px 0;
 }
 .colors .row div {
 	display: inline-block;
@@ -217,9 +283,6 @@ nav::after{
 }
 .color-six{
 	background: #808080;
-}
-.color-eight{
-	background: #e5cab9; 
 }
 .color-nine{
 	background: #eacec1;
